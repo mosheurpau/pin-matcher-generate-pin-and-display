@@ -27,6 +27,9 @@ body {
     font-size: 20px;
     text-align: center;
 }
+.generate-btn:hover {
+    box-shadow: #495BC3 0px 7px 29px 0px;
+}
 .generate-btn:focus{
     outline: none;
     box-shadow: none;
@@ -76,6 +79,11 @@ margin-right: -4px;
 border-radius: 10px;
 cursor: pointer;
 }
+.button:hover {
+    background-color: blue;
+    box-shadow: #495BC3 0px 10px 50px;
+}
+
 .blink-me {
 color: #E0B612;
 }
@@ -95,6 +103,7 @@ color: #E0B612;
     margin-top: 20px;
     border-radius: 15px;
     padding: 5px 20px;
+    display: none;
 }
 .notify-section{
     width: 35%;

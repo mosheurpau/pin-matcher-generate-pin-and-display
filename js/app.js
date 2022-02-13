@@ -38,10 +38,16 @@ document.getElementById('key-pad').addEventListener('click', function (event) {
 function verifyPin() {
     const pin = document.getElementById('display-pin').value;
     const typedNumbers = document.getElementById('typed-numbers').value;
+    const successMessage = document.getElementById('notify-success');
+    const failError = document.getElementById('notify-fail');
     if (pin == typedNumbers) {
-        console.log('yayay');
+        successMessage.style.display = 'block';
+        failError.style.display = 'none';
+
     }
     else {
-        console.log('sjsjdnjkjds');
+        successMessage.style.display = 'none';
+        failError.style.display = 'block';
+
     }
 }
